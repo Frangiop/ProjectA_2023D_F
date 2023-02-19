@@ -1,0 +1,62 @@
+<form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+
+    <!-- est eso como lo tiene jose
+    <input formControlName="name" placeholder="name"/>
+   se ponen las missmas variables, no invetemos, titulo , author ,cover ,company 
+    <input formControlName="price" placeholder="price"/>
+    <input formControlName="image" placeholder="image"/>
+    <input formControlName="description" placeholder="description"/>
+    <input formControlName="stars" placeholder="stars"/>
+
+   <button type="submit">crear</button>
+-->
+
+<mat-form-field appearance="outline">
+    <mat-label>Nombre</mat-label>
+    <input matInput formControlName="name" placeholder="nombre">
+    <mat-error *ngIf="productForm.get('name')?.hasError('required')">este campo es obligatorio</mat-error>
+    <!-- <mat-error *ngIf="productForm.controls.name.errors?.minlenght"> </mat-error> -->
+  <!--  <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error> --> 
+  </mat-form-field>
+
+
+  <mat-form-field appearance="outline">
+    <mat-label>Price</mat-label>
+    <input matInput formControlName="name" placeholder="Price">
+    <mat-error *ngIf="productForm.get('price')?.hasError('required')">este campo es obligatorio</mat-error>
+    <!-- <mat-error *ngIf="productForm.controls.name.errors?.minlenght"> </mat-error> -->
+  <!--  <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error> --> 
+  </mat-form-field>
+
+
+  <mat-form-field appearance="outline">
+    <mat-label>Image</mat-label>
+    <input matInput formControlName="image" placeholder="Image URL">
+    <mat-error *ngIf="productForm.get('image')?.hasError('required')">este campo es obligatorio</mat-error>
+    <!-- <mat-error *ngIf="productForm.controls.name.errors?.minlenght"> </mat-error> -->
+  <!--  <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error> --> 
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Description</mat-label>
+    <input matInput formControlName="description" placeholder="description">
+    <mat-error *ngIf="productForm.get('description')?.hasError('required')">este campo es obligatorio</mat-error>
+    <!-- <mat-error *ngIf="productForm.controls.name.errors?.minlenght"> </mat-error> -->
+  <!--  <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error> --> 
+  </mat-form-field>
+
+
+  <mat-form-field appearance="outline">
+    <mat-label>Stars</mat-label>
+    <input matInput formControlName="stars" placeholder="stars">
+    <mat-error *ngIf="productForm.get('stars')?.hasError('required')">este campo es obligatorio</mat-error>
+    <!-- <mat-error *ngIf="productForm.controls.name.errors?.minlenght"> </mat-error> -->
+  <!--  <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error> --> 
+  </mat-form-field>
+
+  <button type="submit">crear</button>
+
+   </form>
+ 
+   <app-details [product]="newProduct"> </app-details>
+

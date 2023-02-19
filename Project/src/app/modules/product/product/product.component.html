@@ -1,0 +1,13 @@
+<div> <!-- aquie no hace falta bucle para recorrle ( *ngFor), porque tenemos un objeto , lo llamamos directamente  --> 
+    <h4> {{product?.name}} </h4> <!--le pongo la interrogacion "?" para que no de errir  --> 
+       <!-- con la ? decumos que puede que esté o no pero te llegará en ñagun momento   -->
+   
+       <img src="{{product?.image}} "  alt=" {{product?.name}}">
+       <p>Description: {{product?.description}}</p>
+       <p>Price: {{product?.price}}</p>
+      <!-- <button routerLink="/">Ir atrás</button>  -->
+        <!--  <button routerLink="/">Ir atrás</button>  lo tenemos abajo con angular material   --> 
+       <button  routerLink="/product/products" mat-raised-button color="primary" (click)="deleteProduct()">Borrar</button> <!--aquie -->
+       <button  routerLink="/product/products" mat-raised-button color="primary">Ir atrás</button> <!-- routerLink="/products"  quae cuando vaya atras me deuvela a prodcuts  -->
+      <!--  <button (click)="deleteProduct()">Borrar</button> // amtes de usar Angular Material estaba así ( ESTE BOTON ES PARA QUE DEVUELA A PRODUCTS Y NO A HOME, ES C¡ROUTING PURO) -->
+   </div>
