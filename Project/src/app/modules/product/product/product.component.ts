@@ -35,7 +35,7 @@ this.productService.getProduct(this.id).subscribe((data:any)=>{
 // la metemos fuera del resto de las funciones  !!!!
 deleteProduct(){
   this.productService.deleteProduct(this.id).subscribe((data:any)=>{
-    this.router.navigate(["/"]) // este router actua aexactamente igual que router link , te redirige a un lugar que ti quireas 
+  this.router.navigate([]) // this.router.navigate(["/"])  esto es lo de jose // este router actua aexactamente igual que router link , te redirige a un lugar que ti quireas 
   })
 }
 
