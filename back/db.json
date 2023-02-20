@@ -47,14 +47,6 @@
       "description": "No sé si es legal vender animales online...",
       "stars": 3,
       "image": "https://i.ibb.co/1zPPBjx/gato.jpg"
-    },
-    {
-      "name": "dfb",
-      "price": "",
-      "description": "dbf",
-      "stars": "dbf",
-      "image": "dbf",
-      "id": 9
     }
   ]
 }

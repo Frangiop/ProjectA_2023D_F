@@ -12,8 +12,7 @@ import {MatButtonModule} from '@angular/material/button';// lo importams de angu
     MatInputModule,// lo importams de angular materila 
     MatFormFieldModule,// lo importams de angular materila 
     MatButtonModule// lo importams de angular materila 
-  ],
- exports:[   // ademas de iporatarlo tenemos que exportarlo manualemnte 
+  ], exports:[   // ademas de iporatarlo tenemos que exportarlo manualemnte 
   MatInputModule,
   MatFormFieldModule,
   MatButtonModule
